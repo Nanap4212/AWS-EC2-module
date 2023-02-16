@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ("Checkout") {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Nanap4212/Terraform-jenkins-project.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Nanap4212/AWS-EC2-module.git']])
             }
         }
         stage ("Terraform init") {
